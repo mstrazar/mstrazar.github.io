@@ -16,11 +16,10 @@
 title: sin(x) = x
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Approximating complicated worlds with simple models.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: mstrazar07
+github_username:  mstrazar
 
 # Build settings
 markdown: kramdown
