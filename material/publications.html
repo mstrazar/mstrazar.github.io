@@ -1,0 +1,238 @@
+<html>
+
+<body onload="init()">
+<!--- NOTE: when adding new publications, do not forget to add the call to toggleAbstract to the init() function. --->
+
+<h2>Publications</h2>
+
+List of publications and pre-prints in reverse chronocolgical order. 
+You can toggle abstracts by clicking the corresponding button and hide all abstracts by reloading the page.
+<br/>
+<br/>
+
+<p>
+Stražar M., Curk T. (2016), <b>Learning the kernel matrix via predictive low-rank
+approximations.</b> arXiv preprint arXiv:1601.04366 | 
+<a href="http://arxiv.org/abs/1601.04366"> Link </a> |
+<a onClick="toggleAbstract('abs_mklaren'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_mklaren">
+<p>Efficient and accurate low-rank approximations of multiple data sources are
+essential in the era of big data. The scaling of kernel-based learning
+algorithms to large datasets is limited by the O(n^2) computation and storage
+complexity of the full kernel matrix, which is required by most of the recent
+kernel learning algorithms.  We present the Mklaren algorithm to approximate
+multiple kernel matrices learn a regression model, which is entirely based on
+geometrical concepts. The algorithm does not require access to full kernel
+matrices yet it accounts for the correlations between all kernels. It uses
+Incomplete Cholesky decomposition, where pivot selection is based on
+least-angle regression in the combined, low-dimensional feature space. The
+algorithm has linear complexity in the number of data points and kernels. When
+explicit feature space induced by the kernel can be constructed, a mapping from
+the dual to the primal Ridge regression weights is used for model
+interpretation. </p>
+
+<p>The Mklaren algorithm was tested on eight standard regression
+datasets. It outperforms contemporary kernel matrix approximation approaches
+when learning with multiple kernels. It identifies relevant kernels, achieving
+highest explained variance than other multiple kernel learning methods for the
+same number of iterations. Test accuracy, equivalent to the one using full
+kernel matrices, was achieved with at significantly lower approximation ranks.
+A difference in run times of two orders of magnitude was observed when either
+the number of samples or kernels exceeds 3000.</p>
+</div>
+
+<p>Stražar M., Ule J., Žitnik M, Zupan B., Curk T. (2016), <b>Orthogonal matrix
+factorization enables integrative analysis of multiple RNA binding proteins.</b> Bioinformatics.
+doi: 10.1093/bioinformatics/btw003 | 
+<a href="
+http://bioinformatics.oxfordjournals.org/content/early/2016/01/18/bioinformatics.btw003.abstract?keytype=ref&ijkey=7YhmkcWqEPHzqlb"> Link </a> | 
+<a onClick="toggleAbstract('abs_ionmf'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_ionmf">
+<p>RNA binding proteins (RBPs) play important roles in post-transcriptional
+control of gene expression, including splicing, transport, polyadenylation and
+RNA stability. To model protein–RNA interactions by considering all available
+sources of information, it is necessary to integrate the rapidly growing RBP
+experimental data with the latest genome annotation, gene function, RNA
+sequence and structure. Such integration is possible by matrix factorization,
+where current approaches have an undesired tendency to identify only a small
+number of the strongest patterns with overlapping features. Because protein–RNA
+interactions are orchestrated by multiple factors, methods that identify
+discriminative patterns of varying strengths are needed.</p>
+
+<p>We have developed an integrative orthogonality-regularized
+nonnegative matrix factorization (iONMF) to integrate multiple data sources and
+discover non-overlapping, class-specific RNA binding patterns of varying
+strengths. The orthogonality constraint halves the effective size of the factor
+model and outperforms other NMF models in predicting RBP interaction sites on
+RNA. We have integrated the largest data compendium to date, which includes 31
+CLIP experiments on 19 RBPs involved in splicing (such as hnRNPs, U2AF2,
+ELAVL1, TDP-43 and FUS) and processing of 3’UTR (Ago, IGF2BP). We show that the
+integration of multiple data sources improves the predictive accuracy of
+retrieval of RNA binding sites. In our study the key predictive factors of
+protein–RNA interactions were the position of RNA structure and sequence
+motifs, RBP co-binding and gene region type. We report on a number of
+protein-specific patterns, many of which are consistent with experimentally
+determined properties of RBPs.</p>
+</div>
+
+
+
+<p>
+Kavšček, M., Stražar, M., Curk, T., Natter, K.,  Petrovič, U. (2015). <b>Yeast as
+a cell factory: current state and perspectives.</b> Microbial cell factories,
+14(1), 1 |
+<a href="http://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-015-0281-x">Link</a> |
+<a onClick="toggleAbstract('abs_yeast'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+
+<div id="abs_yeast">
+The yeast Saccharomyces cerevisiae is one of the oldest and most frequently
+used microorganisms in biotechnology with successful applications in the
+production of both bulk and fine chemicals. Yet, yeast researchers are faced
+with the challenge to further its transition from the old workhorse to a modern
+cell factory, fulfilling the requirements for next generation bioprocesses.
+Many of the principles and tools that are applied for this development
+originate from the field of synthetic biology and the engineered strains will
+indeed be synthetic organisms. We provide an overview of the most important
+aspects of this transition and highlight achievements in recent years as well
+as trends in which yeast currently lags behind. These aspects include: the
+enhancement of the substrate spectrum of yeast, with the focus on the efficient
+utilization of renewable feedstocks, the enhancement of the product spectrum
+through generation of independent circuits for the maintenance of redox
+balances and biosynthesis of common carbon building blocks, the requirement for
+accurate pathway control with improved genome editing and through orthogonal
+promoters, and improvement of the tolerance of yeast for specific stress
+conditions. The causative genetic elements for the required traits of the
+future yeast cell factories will be assembled into genetic modules for fast
+transfer between strains. These developments will benefit from progress in
+bio-computational methods, which allow for the integration of different kinds
+of data sets and algorithms, and from rapid advancement in genome editing,
+which will enable multiplexed targeted integration of whole heterologous
+pathways. The overall goal will be to provide a collection of modules and
+circuits that work independently and can be combined at will, depending on the
+individual conditions, and will result in an optimal synthetic host for a given
+production process.
+</div>
+
+
+<p>
+Stražar, M., Mraz, M., Zimic, N.,  Moškon, M. (2014). <b>An adaptive genetic
+algorithm for parameter estimation of biological oscillator models to achieve
+target quantitative system response.</b> Natural Computing, 13(1), 119-127 |
+<a href="http://link.springer.com/article/10.1007/s11047-013-9383-8"> Link </a> |
+<a onClick="toggleAbstract('abs_adaptive'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_adaptive">
+Mathematical modeling has become an integral part of synthesizing gene
+regulatory networks. One of the common problems is the determination of
+parameters, which are a part of the model description. In the present work, we
+propose a customized genetic algorithm as a method to determine the parameters
+such that the underlying oscillatory system exhibits the target behavior. We
+propose a problem specific, adaptive fitness function evaluation and a method
+to quantify the effect of a single parameter on the system response. The
+properties of the algorithm are highlighted and confirmed on two test cases of
+synthetic biological oscillators.
+</div>
+
+
+<p>
+Lebar, T., Bezeljak, U., Golob, A., Jerala, M., Kadunc, L., Pirš, B., Stražar
+M., ...  Jerala, R. (2014). <b>A bistable genetic switch based on designable
+DNA-binding domains.</b> Nature communications, 5 |
+<a href="http://www.nature.com/ncomms/2014/140929/ncomms6007/full/ncomms6007.html">Link</a> | 
+<a onClick="toggleAbstract('abs_bistable'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_bistable">
+Bistable switches are fundamental regulatory elements of complex systems,
+ranging from electronics to living cells. Designed genetic toggle switches have
+been constructed from pairs of natural transcriptional repressors wired to
+inhibit one another. The complexity of the engineered regulatory circuits can
+be increased using orthogonal transcriptional regulators based on designed
+DNA-binding domains. However, a mutual repressor-based toggle switch comprising
+DNA-binding domains of transcription-activator-like effectors (TALEs) did not
+support bistability in mammalian cells. Here, the challenge of engineering a
+bistable switch based on monomeric DNA-binding domains is solved via the
+introduction of a positive feedback loop composed of activators based on the
+same TALE domains as their opposing repressors and competition for the same DNA
+operator site. This design introduces nonlinearity and results in epigenetic
+bistability. This principle could be used to employ other monomeric DNA-binding
+domains such as CRISPR for applications ranging from reprogramming cells to
+building digital biological memory.
+</div>
+
+<p>
+Moškon, M., Zimic, N., Stražar, M.,  Mraz, M. (2013). <b>Comparison of selected
+performances of biological and electronic information processing structures.</b>
+Przegląd Elektrotechniczny, 89 | 
+<a href="https://www.infona.pl/resource/bwmeta1.element.baztech-8535e86f-3659-4526-a3a2-9f039df4bda8">Link</a> |
+<a onClick="toggleAbstract('abs_comparison'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_comparison">
+We present the information processing perspective on biological systems.
+Several metrics, similar to the ones used in digital electronic circuits, are
+introduced. These metrics allow us to compare biological information processing
+structures with their electronic counterparts, to define the ones with the best
+dynamical properties, analyse their compatibility and most importantly,
+automatize their design. Regarding the metric values obtained and used on a
+simple example, target applications of synthetic information processing
+biological structures are discussed.
+</div>
+
+
+<h2>Posters</h2>
+
+Posters presented at conferences, meetings and workshops.
+<br/>
+<br/>
+
+<p> Stražar M., Ule J., Curk T. (2017). <b>csDEX: condition-specific
+differential exon expression.</b> 25th annual International Conference on
+Intelligent Systems for Molecuar Biology. European conference on Computational
+Biology. Prague, Czech Republic | <a
+href="../posters/poster_csdex.pdf">PDF</a> | <a
+href="../posters/poster_csdex.png">PNG</a> </p>
+
+<p> Stražar M., Curk T. (2016) <b>Learning the kernel matrix by predictive
+low-rank approximations.</b> Machine Learning Summer School. Cadiz, Spain |
+<a href="../posters/poster_mklaren.pdf">PDF</a> | 
+<a href="../posters/poster_mklaren.png">PNG</a> </p>
+
+<p> Stražar M., Žitnik M., Zupan B., Ule J., Curk T. (2015). <b>Orthogonal
+nonnegative factorization-based analysis of nineteen protein-RNA interaction
+CLIP data sets</b>. 23rd annual International Conference on Intelligent Systems
+for Molecuar Biology. European conference on Computational Biology. Dublin,
+Ireland | <a href="../posters/poster_ionmf.pdf">PDF</a> | <a
+href="../posters/poster_ionmf.png">PNG</a> </p>
+
+<script>
+function toggleAbstract(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function init(){
+    toggleAbstract("abs_mklaren");
+    toggleAbstract("abs_ionmf");
+    toggleAbstract('abs_yeast');
+    toggleAbstract('abs_adaptive');
+    toggleAbstract('abs_bistable');
+    toggleAbstract('abs_comparison');
+}   
+
+</script>
+
+</body>
+</html>
+
