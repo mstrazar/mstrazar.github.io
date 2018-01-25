@@ -1,0 +1,6 @@
+# Run jekyll server
+source /Users/martins/.rvm/scripts/rvm
+jekyll serve
+
+# Links
+https://jekyllrb.com/tutorials/convert-site-to-jekyll/
