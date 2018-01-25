@@ -6,10 +6,14 @@ permalink: /pubs/
 
 <html>
 
+<style>
+  .abstract {
+    color: darkslategray;
+  }
+</style>
+
 <body onload="init()">
 <!--- NOTE: when adding new publications, do not forget to add the call to toggleAbstract to the init() function. --->
-
-<h2>Publications</h2>
 
 List of publications and pre-prints in reverse chronocolgical order. 
 You can toggle abstracts by clicking the corresponding button and hide all abstracts by reloading the page.
@@ -23,7 +27,7 @@ approximations.</b> arXiv preprint arXiv:1601.04366 |
 <a onClick="toggleAbstract('abs_mklaren'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
-<div id="abs_mklaren">
+<div id="abs_mklaren" class="abstract">
 <p>Efficient and accurate low-rank approximations of multiple data sources are
 essential in the era of big data. The scaling of kernel-based learning
 algorithms to large datasets is limited by the O(n^2) computation and storage
@@ -57,7 +61,7 @@ http://bioinformatics.oxfordjournals.org/content/early/2016/01/18/bioinformatics
 <a onClick="toggleAbstract('abs_ionmf'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
-<div id="abs_ionmf">
+<div id="abs_ionmf" class="abstract">
 <p>RNA binding proteins (RBPs) play important roles in post-transcriptional
 control of gene expression, including splicing, transport, polyadenylation and
 RNA stability. To model protein–RNA interactions by considering all available
@@ -95,9 +99,8 @@ a cell factory: current state and perspectives.</b> Microbial cell factories,
 <a onClick="toggleAbstract('abs_yeast'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
-
-<div id="abs_yeast">
-The yeast Saccharomyces cerevisiae is one of the oldest and most frequently
+<div id="abs_yeast" class="abstract">
+<p>The yeast Saccharomyces cerevisiae is one of the oldest and most frequently
 used microorganisms in biotechnology with successful applications in the
 production of both bulk and fine chemicals. Yet, yeast researchers are faced
 with the challenge to further its transition from the old workhorse to a modern
@@ -122,7 +125,7 @@ which will enable multiplexed targeted integration of whole heterologous
 pathways. The overall goal will be to provide a collection of modules and
 circuits that work independently and can be combined at will, depending on the
 individual conditions, and will result in an optimal synthetic host for a given
-production process.
+production process. </p>
 </div>
 
 
@@ -134,8 +137,8 @@ target quantitative system response.</b> Natural Computing, 13(1), 119-127 |
 <a onClick="toggleAbstract('abs_adaptive'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
-<div id="abs_adaptive">
-Mathematical modeling has become an integral part of synthesizing gene
+<div id="abs_adaptive" class="abstract">
+<p>Mathematical modeling has become an integral part of synthesizing gene
 regulatory networks. One of the common problems is the determination of
 parameters, which are a part of the model description. In the present work, we
 propose a customized genetic algorithm as a method to determine the parameters
@@ -143,7 +146,7 @@ such that the underlying oscillatory system exhibits the target behavior. We
 propose a problem specific, adaptive fitness function evaluation and a method
 to quantify the effect of a single parameter on the system response. The
 properties of the algorithm are highlighted and confirmed on two test cases of
-synthetic biological oscillators.
+synthetic biological oscillators.</p>
 </div>
 
 
@@ -155,8 +158,8 @@ DNA-binding domains.</b> Nature communications, 5 |
 <a onClick="toggleAbstract('abs_bistable'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
-<div id="abs_bistable">
-Bistable switches are fundamental regulatory elements of complex systems,
+<div id="abs_bistable" class="abstract">
+<p>Bistable switches are fundamental regulatory elements of complex systems,
 ranging from electronics to living cells. Designed genetic toggle switches have
 been constructed from pairs of natural transcriptional repressors wired to
 inhibit one another. The complexity of the engineered regulatory circuits can
@@ -170,7 +173,7 @@ same TALE domains as their opposing repressors and competition for the same DNA
 operator site. This design introduces nonlinearity and results in epigenetic
 bistability. This principle could be used to employ other monomeric DNA-binding
 domains such as CRISPR for applications ranging from reprogramming cells to
-building digital biological memory.
+building digital biological memory.</p>
 </div>
 
 <p>
@@ -181,7 +184,8 @@ Przegląd Elektrotechniczny, 89 |
 <a onClick="toggleAbstract('abs_comparison'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
-<div id="abs_comparison">
+<div id="abs_comparison" class="abstract">
+<p>
 We present the information processing perspective on biological systems.
 Several metrics, similar to the ones used in digital electronic circuits, are
 introduced. These metrics allow us to compare biological information processing
@@ -189,7 +193,7 @@ structures with their electronic counterparts, to define the ones with the best
 dynamical properties, analyse their compatibility and most importantly,
 automatize their design. Regarding the metric values obtained and used on a
 simple example, target applications of synthetic information processing
-biological structures are discussed.
+biological structures are discussed.</p>
 </div>
 
 
