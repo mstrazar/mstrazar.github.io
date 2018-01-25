@@ -1,6 +1,6 @@
 ---
 title: Landing page
-permalink: testpage
+permalink: testpage/
 ---
 
 # Header 1
