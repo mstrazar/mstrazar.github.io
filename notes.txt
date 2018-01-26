@@ -4,3 +4,5 @@ jekyll serve
 
 # Links
 https://jekyllrb.com/tutorials/convert-site-to-jekyll/
+
+![logo](/img/logo.png){:class="img-responsive"}
