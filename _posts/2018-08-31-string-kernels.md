@@ -499,8 +499,7 @@ fig.tight_layout()
 
 The data is related to the TDP-43 RNA binding protein (Tollervey et al., 2011). In short, the data contains the sequences that interact with this protein (positives, $$y=1$$), and those that don't (negatives, $$y=-1$$). This is a typical machine learning task of binary classification. 
 
-The data can be downloaded <a href="./data-TDP43
-.zip">here</a>. First, we load 1000 example DNA sequences and the corersponding target values (classfication as negative/positives).  Because the sequences are of varying length, they have been padded either side with an 'unknown' symbol, taken to be N. This data is provided with the GraphProt sequence prediction method (Maticzka et al., 2014).
+The data can be downloaded <a href="/notebooks/string-kernels/data-TDP43.zip">here</a>. First, we load 1000 example DNA sequences and the corersponding target values (classfication as negative/positives).  Because the sequences are of varying length, they have been padded either side with an 'unknown' symbol, taken to be N. This data is provided with the GraphProt sequence prediction method (Maticzka et al., 2014).
 
 
 ```python
