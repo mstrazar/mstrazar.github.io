@@ -3,10 +3,11 @@ import csv
 from keras.datasets import mnist
 from vae import VAE
 from time import time
+import sys
 
 def score_parameters(x_train, x_test, original_dim, **kwargs):
     """ Train the auto encoder and score. """
-    factory = VAE(original_dim=original_dim, **kwargs)
+    factory = VAE(original_dim=original_dim, latent_dim=1, **kwargs)
     vae = factory.compile()
     vae.fit(x_train,
            epochs=10,
@@ -29,17 +30,17 @@ x_train = x_train.astype('float32') / 255
 x_test = x_test.astype('float32') / 255
 
 # Score points
-x = np.linspace(1, 1000, 1000).astype(int)
-np.random.shuffle(x)
-fp = open("out.txt", "w", buffering=1)
-writer = csv.DictWriter(fp, fieldnames=["x", "score", "time"])
+f_out = sys.argv[1]
+a = [0] + list(np.logspace(-10, 0, 31))
+fp = open(f_out, "w", buffering=1)
+writer = csv.DictWriter(fp, fieldnames=["alpha", "score", "time"])
 writer.writeheader()
 
 # Write scores to file
-for xi in x:
+for alpha in a:
     t = time()
-    score = score_parameters(x_train, x_test, original_dim, intermediate_dim=xi)[-1]
+    score = score_parameters(x_train, x_test, original_dim, intermediate_dim=512, alpha1=alpha)[-1]
     t = time() - t
-    writer.writerow({"x": xi, "score": score, "time": t})
-    print("hook\tx: %d\tscore: %.3f\ttime: %.2f" % (xi, score, t))
+    writer.writerow({"alpha": alpha, "score": score, "time": t})
+    print("hook\talpha: %d\tscore: %.3f\ttime: %.2f" % (alpha, score, t))
 fp.close()

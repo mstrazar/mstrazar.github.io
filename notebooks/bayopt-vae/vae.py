@@ -21,6 +21,7 @@ from keras.layers import Lambda, Input, Dense
 from keras.models import Model
 from keras.losses import binary_crossentropy
 from keras import backend as K
+from keras import regularizers
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -53,13 +54,14 @@ def sampling(args):
 class VAE:
 
     def __init__(self, original_dim = 28 ** 2,
-        intermediate_dim = 512, batch_size = 128, latent_dim = 2, epochs = 50):
+        intermediate_dim = 512, batch_size = 128, latent_dim = 2, epochs = 50, alpha1=0.01):
         self.original_dim = original_dim
         self.input_shape = (original_dim, )
         self.intermediate_dim = intermediate_dim
         self.batch_size = batch_size
         self.latent_dim = latent_dim
         self.epochs = epochs
+        self.alpha1 = alpha1
         self.decoder = None
         self.encoder = None
 
@@ -73,6 +75,7 @@ class VAE:
         batch_size = self.batch_size
         latent_dim = self.latent_dim
         epochs = self.epochs
+        alpha1 = self.alpha1
 
         inputs = Input(shape=input_shape, name='encoder_input')
         x = Dense(intermediate_dim, activation='relu')(inputs)
@@ -87,17 +90,18 @@ class VAE:
 
         # instantiate encoder model
         encoder = Model(inputs, [z_mean, z_log_var, z], name='encoder')
-        encoder.summary()
+        # encoder.summary()
         # plot_model(encoder, to_file='vae_mlp_encoder.png', show_shapes=True)
 
         # build decoder model
         latent_inputs = Input(shape=(latent_dim,), name='z_sampling')
         x = Dense(intermediate_dim, activation='relu')(latent_inputs)
-        outputs = Dense(original_dim, activation='sigmoid')(x)
+        outputs = Dense(original_dim, activation='sigmoid',
+                        activity_regularizer=regularizers.l2(alpha1))(x)
 
         # instantiate decoder model
         decoder = Model(latent_inputs, outputs, name='decoder')
-        decoder.summary()
+        # decoder.summary()
         # plot_model(decoder, to_file='vae_mlp_decoder.png', show_shapes=True)
 
         # instantiate VAE model
@@ -113,7 +117,7 @@ class VAE:
         vae_loss = K.mean(reconstruction_loss + kl_loss)
         vae.add_loss(vae_loss)
         vae.compile(optimizer='adam')
-        vae.summary()
+        # vae.summary()
 
         self.encoder = encoder
         self.decoder = decoder
