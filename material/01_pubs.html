@@ -19,47 +19,153 @@ permalink: /pubs/
 <body onload="init()">
 <!--- NOTE: when adding new publications, do not forget to add the call to toggleAbstract to the init() function. --->
 
-<p class="intro"> List of publications and pre-prints in reverse chronocolgical order.
+<p class="intro"> List of peer-reviewed publications and pre-prints in reverse chronological order.
 You can toggle abstracts by clicking the corresponding button and hide all abstracts by reloading the page.
 </p>
 
+
 <p>
-Stražar M., Curk T. (2016), <b>Learning the kernel matrix via predictive low-rank
-approximations.</b> arXiv preprint arXiv:1601.04366 | 
-<a href="http://arxiv.org/abs/1601.04366"> Link </a> |
+    <u>Stražar, M</u>., Temba, G. S., Vlamakis, H., Kullaya, V. I., Lyamuya, F., Mmbaga, B. T., ... Xavier, R. J. (2021). Gut
+    <b>microbiome-mediated metabolism effects on immunity in rural and urban African populations</b>. Nature communications, 12(1), 1-15.|
+<a href="https://www.nature.com/articles/s41467-021-25213-2"> Link </a> |
+<a onClick="toggleAbstract('abs_tanzania'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_tanzania" class="abstract">
+    <p>The human gut microbiota is increasingly recognized as an important factor in modulating innate and adaptive
+        immunity through release of ligands and metabolites that translocate into circulation. Urbanizing African
+        populations harbor large intestinal diversity due to a range of lifestyles, providing the necessary variation to
+        gauge immunomodulatory factors. Here, we uncover a gradient of intestinal microbial compositions from rural through urban
+        Tanzanian, towards European samples, manifested both in relative abundance and genomic variation observed in stool metagenomics.
+        The rural population shows increased <i>Bacteroidetes</i>, led by <i>Prevotella copri</i>, but also presence of fungi.
+        Measured ex vivo cytokine responses were significantly associated with 34 immunomodulatory microbes, which have
+        a larger impact on circulating metabolites than non-significant microbes. Pathway effects on cytokines, notably
+        TNF-α and IFN-γ, differential metabolome analysis and enzyme copy number enrichment converge on histidine and
+        arginine metabolism as potential immunomodulatory pathways mediated by <i>Bifidobacterium longum</i>
+        and <i>Akkermansia muciniphila</i>.</p>
+</div>
+
+
+<p>Poličar, P. G., <u>Stražar, M</u>., and Zupan, B. (2021).
+<b>Embedding to reference t-SNE space addresses batch effects in single-cell classification</b>. Machine Learning, 1-20.
+    |
+<a href="https://link.springer.com/article/10.1007/s10994-021-06043-1"> Link </a> |
+<a onClick="toggleAbstract('abs_tsne_springer'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+<div id="abs_tsne_springer" class="abstract">
+    <p>Dimensionality reduction techniques, such as t-SNE, can construct informative visualizations of high-dimensional
+        data. When jointly visualising multiple data sets, a straightforward application of these methods often fails;
+        instead of revealing underlying classes, the resulting visualizations expose dataset-specific clusters. To
+        circumvent these batch effects, we propose an embedding procedure that uses a t-SNE visualization constructed
+        on a reference data set as a scaffold for embedding new data points. Each data instance from a new, unseen,
+        secondary data is embedded independently and does not change the reference embedding. This prevents any
+        interactions between instances in the secondary data and implicitly mitigates batch effects. We
+        demonstrate the utility of this approach by analyzing six recently published single-cell gene
+        expression data sets with up to tens of thousands of cells and thousands of genes. The batch effects in
+        our studies are particularly strong as the data comes from different institutions using different experimental
+        protocols. The visualizations constructed by our proposed approach are clear of batch effects, and the cells
+        from secondary data sets correctly co-cluster with cells of the same type from the primary data. We also show
+        the predictive power of our simple, visual classification approach in t-SNE space matches the accuracy of
+        specialized machine learning techniques that consider the entire compendium of features that profile single
+        cells.</p>
+</div>
+
+
+
+
+<p> Poličar, P. G., <u>Stražar, M.</u>, Zupan, B. (2019). <b>openTSNE: a modular Python library for t-SNE dimensionality reduction and embedding</b>. BioRxiv, 731877.
+    |
+<a href="https://www.biorxiv.org/content/10.1101/731877v1.abstract"> Link </a> |
+<a onClick="toggleAbstract('abs_open_tsne'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+<div id="abs_open_tsne" class="abstract">
+    <p>Point-based visualisations of large, multi-dimensional data from molecular biology can reveal meaningful clusters.
+        One of the most popular techniques to construct such visualisations is t-distributed stochastic neighbor embedding
+        (t-SNE), for which a number of extensions have recently been proposed to address issues of scalability and the quality
+        of the resulting visualisations. We introduce openTSNE, a modular Python library that implements the core t-SNE
+        algorithm and its extensions. The library is orders of magnitude faster than existing popular implementations,
+        including those from scikit-learn. Unique to openTSNE is also the mapping of new data to existing embeddings,
+        which can surprisingly assist in solving batch effects.</p>
+
+    <p>openTSNE is available at <a href="https://github.com/pavlin-policar/openTSNE">https://github.com/pavlin-policar/openTSNE</a>.</p>
+</div>
+
+<p>
+    Godec, P., Pančur, M., Ilenič, N., Čopar, A., <u>Stražar, M.</u>, Erjavec, A., ... Zupan, B. (2019).
+    <b>Democratized image analytics by visual programming through integration of deep models and small-scale machine learning.</b>
+    Nature communications, 10(1), 1-7.  |
+<a href="https://www.nature.com/articles/s41467-019-12397-x"> Link </a> |
+<a onClick="toggleAbstract('abs_orange_img'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+<div id="abs_orange_img" class="abstract">
+    <p>Analysis of biomedical images requires computational expertize that are uncommon among biomedical scientists.
+        Deep learning approaches for image analysis provide an opportunity to develop user-friendly tools for
+        exploratory data analysis. Here, we use the visual programming toolbox Orange
+        (<a href="http://orange.biolab.si">http://orange.biolab.si</a>)
+        to simplify image analysis by integrating deep-learning embedding, machine learning procedures, and data
+        visualization. Orange supports the construction of data analysis workflows by assembling components for
+        data preprocessing, visualization, and modeling. We equipped Orange with components that use pre-trained
+        deep convolutional networks to profile images with vectors of features. These vectors are used in image
+        clustering and classification in a framework that enables mining of image sets for both novel and experienced
+        users. We demonstrate the utility of the tool in image analysis of progenitor cells in mouse bone healing,
+        identification of developmental competence in mouse oocytes, subcellular protein localization in yeast, and
+        developmental morphology of social amoebae.</p>
+</div>
+
+
+<p>
+    <u>Stražar, M.</u>, Žagar, L., Kokošar, J., Tanko, V., Erjavec, A., Poličar, P. G., ... Zupan, B. (2019).
+    <b>scOrange—a tool for hands-on training of concepts from single-cell data analytics</b>. Bioinformatics, 35(14), i4-i12. |
+<a href="https://academic.oup.com/bioinformatics/article/35/14/i4/5529249?login=true"> Link </a> |
+<a onClick="toggleAbstract('abs_scorange'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+<div id="abs_scorange" class="abstract">
+    <p>Single-cell RNA sequencing allows us to simultaneously profile the transcriptomes of thousands of
+        cells and to indulge in exploring cell diversity, development and discovery of new molecular mechanisms.
+        Analysis of scRNA data involves a combination of non-trivial steps from statistics, data visualization,
+        bioinformatics and machine learning. Training molecular biologists in single-cell data analysis and
+        empowering them to review and analyze their data can be challenging, both because of the complexity of the
+        methods and the steep learning curve.</p>
+
+    <p>We propose a workshop-style training in single-cell data analytics that relies on an explorative data analysis
+        toolbox and a hands-on teaching style. The training relies on scOrange, a newly developed extension of a data
+        mining framework that features workflow design through visual programming and interactive visualizations.
+        Workshops with scOrange can proceed much faster than similar training methods that rely on computer programming
+        and analysis through scripting in R or Python, allowing the trainer to cover more ground in the same time-frame.
+        We here review the design principles of the scOrange toolbox that support such workshops and propose a syllabus
+        for the course. We also provide examples of data analysis workflows that instructors can use during the training.</p>
+
+    <p>scOrange is an open-source software. The software, documentation and an emerging set of educational videos
+        are available at <a href="http://singlecell.biolab.si">http://singlecell.biolab.si</a>.</p>
+</div>
+
+<p><u>Stražar, M.</u>, Curk, T. (2019). <b>Approximate multiple kernel learning with least-angle regression</b>. Neurocomputing, 340, 245-258. |
+<a href="
+https://www.sciencedirect.com/science/article/pii/S0925231219302449"> Link </a> | 
 <a onClick="toggleAbstract('abs_mklaren'); return false;" href="fallback.html">Toggle abstract</a> |
 <a href="/material/popups/pub_mklaren.html" target="_blank">Preview</a>
 </p>
 
 <div id="abs_mklaren" class="abstract">
-<p>Efficient and accurate low-rank approximations of multiple data sources are
-essential in the era of big data. The scaling of kernel-based learning
-algorithms to large datasets is limited by the O(n^2) computation and storage
-complexity of the full kernel matrix, which is required by most of the recent
-kernel learning algorithms.  We present the Mklaren algorithm to approximate
-multiple kernel matrices learn a regression model, which is entirely based on
-geometrical concepts. The algorithm does not require access to full kernel
-matrices yet it accounts for the correlations between all kernels. It uses
-Incomplete Cholesky decomposition, where pivot selection is based on
-least-angle regression in the combined, low-dimensional feature space. The
-algorithm has linear complexity in the number of data points and kernels. When
-explicit feature space induced by the kernel can be constructed, a mapping from
-the dual to the primal Ridge regression weights is used for model
-interpretation. </p>
+<p>Kernel methods provide a principled way for general data representations. Multiple kernel learning and kernel approximation are
+    often treated as separate tasks, with considerable savings in time and memory expected if the two are performed simultaneously.</p>
 
-<p>The Mklaren algorithm was tested on eight standard regression
-datasets. It outperforms contemporary kernel matrix approximation approaches
-when learning with multiple kernels. It identifies relevant kernels, achieving
-highest explained variance than other multiple kernel learning methods for the
-same number of iterations. Test accuracy, equivalent to the one using full
-kernel matrices, was achieved with at significantly lower approximation ranks.
-A difference in run times of two orders of magnitude was observed when either
-the number of samples or kernels exceeds 3000.</p>
+<p>Our proposed Mklaren algorithm selectively approximates multiple kernel matrices in regression. It uses Incomplete
+Cholesky Decomposition and Least-angle regression (LAR) to select basis functions, achieving linear complexity both
+in the number of data points and kernels. Since it approximates kernel matrices rather than functions, it allows to
+combine an arbitrary set of kernels. Compared to single kernel-based approximations, it selectively approximates
+    different kernels in different regions of the input spaces.</p>
+
+<p>The LAR criterion provides a robust selection of inducing points in noisy settings, and an accurate modelling of
+regression functions in continuous and discrete input spaces. Among general kernel matrix decompositions,
+Mklaren achieves minimal approximation rank required for performance comparable to using the exact kernel matrix,
+at a cost lower than 1% of required operations. Finally, we demonstrate the scalability and interpretability
+in settings with millions of data points and thousands of kernels.</p>
 </div>
 
-<p>Stražar M., Ule J., Žitnik M, Zupan B., Curk T. (2016), <b>Orthogonal matrix
+<p><u>Stražar M.</u>, Ule J., Žitnik M, Zupan B., Curk T. (2016), <b>Orthogonal matrix
 factorization enables integrative analysis of multiple RNA binding proteins.</b> Bioinformatics.
-doi: 10.1093/bioinformatics/btw003 | 
+ |
 <a href="
 http://bioinformatics.oxfordjournals.org/content/early/2016/01/18/bioinformatics.btw003.abstract?keytype=ref&ijkey=7YhmkcWqEPHzqlb"> Link </a> | 
 <a onClick="toggleAbstract('abs_ionmf'); return false;" href="fallback.html">Toggle abstract</a> |
@@ -96,7 +202,7 @@ determined properties of RBPs.</p>
 
 
 <p>
-Kavšček, M., Stražar, M., Curk, T., Natter, K.,  Petrovič, U. (2015). <b>Yeast as
+Kavšček, M., <u>Stražar, M.</u>, Curk, T., Natter, K.,  Petrovič, U. (2015). <b>Yeast as
 a cell factory: current state and perspectives.</b> Microbial cell factories,
 14(1), 1 |
 <a href="http://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-015-0281-x">Link</a> |
@@ -135,7 +241,7 @@ production process. </p>
 
 
 <p>
-Stražar, M., Mraz, M., Zimic, N.,  Moškon, M. (2014). <b>An adaptive genetic
+<u>Stražar, M.</u>, Mraz, M., Zimic, N.,  Moškon, M. (2014). <b>An adaptive genetic
 algorithm for parameter estimation of biological oscillator models to achieve
 target quantitative system response.</b> Natural Computing, 13(1), 119-127 |
 <a href="http://link.springer.com/article/10.1007/s11047-013-9383-8"> Link </a> |
@@ -157,8 +263,8 @@ synthetic biological oscillators.</p>
 
 
 <p>
-Lebar, T., Bezeljak, U., Golob, A., Jerala, M., Kadunc, L., Pirš, B., Stražar
-M., ...  Jerala, R. (2014). <b>A bistable genetic switch based on designable
+Lebar, T., Bezeljak, U., Golob, A., Jerala, M., Kadunc, L., Pirš, B., <u>Stražar M.</u>,
+    ...  Jerala, R. (2014). <b>A bistable genetic switch based on designable
 DNA-binding domains.</b> Nature communications, 5 |
 <a href="http://www.nature.com/ncomms/2014/140929/ncomms6007/full/ncomms6007.html">Link</a> | 
 <a onClick="toggleAbstract('abs_bistable'); return false;" href="fallback.html">Toggle abstract</a> |
@@ -184,7 +290,7 @@ building digital biological memory.</p>
 </div>
 
 <p>
-Moškon, M., Zimic, N., Stražar, M.,  Mraz, M. (2013). <b>Comparison of selected
+    Moškon, M., Zimic, N., <u>Stražar, M.</u>,  Mraz, M. (2013). <b>Comparison of selected
 performances of biological and electronic information processing structures.</b>
 Przegląd Elektrotechniczny, 89 | 
 <a href="https://www.infona.pl/resource/bwmeta1.element.baztech-8535e86f-3659-4526-a3a2-9f039df4bda8">Link</a> |
@@ -209,8 +315,18 @@ biological structures are discussed.</p>
 
 <p class="intro">Posters presented at conferences, meetings and workshops.</p>
 
+<p>Stražar, M., Temba, G. S., Vlamakis, H., Kullaya, V. I., Lyamuya, F., Mmbaga, B. T., ... Xavier, R. J. (2021).
+    <b>Urbanization-driven changes in the gut microbiota reveal immunomodulatory metabolites and pathways</b>,
+    <ul>
+    <li>Impact of Environmental Exposures on the Microbiome and Human Health, NIEHS Workshop, February 23, 2021. Virtual.</li>
+    <li>Harnessing the Microbiome for Disease Prevention and Therapy, Keystone Symposium, January 18-20, 2021. Keystone, Co. USA.</li>
+    </ul>
+    <a href="../posters/poster_tanzania.pdf">PDF</a>
+    | <a href="../posters/poster_tanzania.png">PNG</a> </p>
+
 <p> Stražar, M. and Žagar, L. and Kokošar, J. and Tanko, V. and Poličar, P. and Erjavec, A. and Starič, A. and
 Menon, V. and Chen, R. and Shaulsky, G. and Lemire, A. and Parikh, A. and Zupan, B. (2018).
+
     <b>scOrange: Single-Cell Data Mining for Everyone.</b>
     The 16th International NETTAB workshop.  October 22-24. Genova, Italy.
     | <a href="../posters/poster_nettab.pdf">PDF</a>
@@ -246,13 +362,18 @@ function toggleAbstract(id) {
 }
 
 function init(){
+	toggleAbstract("abs_tanzania");
+	toggleAbstract("abs_tsne_springer");
+	toggleAbstract("abs_open_tsne");
+	toggleAbstract("abs_orange_img");
+	toggleAbstract("abs_scorange");
     toggleAbstract("abs_mklaren");
     toggleAbstract("abs_ionmf");
     toggleAbstract('abs_yeast');
     toggleAbstract('abs_adaptive');
     toggleAbstract('abs_bistable');
     toggleAbstract('abs_comparison');
-}   
+}
 
 </script>
 
