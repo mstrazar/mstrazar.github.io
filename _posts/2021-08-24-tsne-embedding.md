@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reduce, reuse, recycle t-SNE projections "
+title:  "Reduce, reuse, recycle your t-SNE projections "
 date:   2021-08-24 20:00:30 +0100
 author: "Martin Stražar"
 categories: orange image-analysis deep-learning 
