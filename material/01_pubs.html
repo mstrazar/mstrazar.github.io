@@ -23,6 +23,38 @@ permalink: /pubs/
 You can toggle abstracts by clicking the corresponding button and hide all abstracts by reloading the page.
 </p>
 
+<p>
+    <u>Stražar, M.*,</u> Mourits, V. P.*, Koeken, V. A., de Bree, L. C. J., Moorlag, S. J., Joosten, L. A., ... & Xavier, R. J. (2021).
+    <b>The influence of the gut microbiome on BCG-induced trained immunity</b>. Genome Biology, 22(1), 1-22.
+
+    <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02482-0"> Link </a> |
+    <a onClick="toggleAbstract('abs_bcg'); return false;" href="fallback.html">Toggle abstract</a>
+
+</p>
+
+<div id="abs_bcg" class="abstract">
+    <p>The bacillus Calmette-Guérin (BCG) vaccine protects against tuberculosis and heterologous infections but elicits
+    high inter-individual variation in specific and nonspecific, or trained, immune responses. While the gut microbiome
+    is increasingly recognized as an important modulator of vaccine responses and immunity in general, its potential role
+        in BCG-induced protection is largely unknown.</p>
+
+<p>Stool and blood were collected from 321 healthy adults before BCG vaccination, followed by blood sampling after
+    2 weeks and 3 months. Metagenomics based on de novo genome assembly reveals 43 immunomodulatory taxa. The nonspecific,
+    trained immune response is detected by altered production of cytokines IL-6, IL-1β, and TNF-α upon ex vivo blood
+    restimulation with Staphylococcus aureus and negatively correlates with abundance of <i>Roseburia</i>. The specific response,
+    measured by IFN-γ production upon Mycobacterium tuberculosis stimulation, is associated positively with <i>Ruminococcus</i> and
+    <i>Eggerthella lenta</i>. The identified immunomodulatory taxa also have the strongest effects on circulating metabolites, with
+    Roseburia affecting phenylalanine metabolism. This is corroborated by abundances of relevant enzymes, suggesting
+    alternate phenylalanine metabolism modules are activated in a <i>Roseburia</i> species-dependent manner.</p>
+
+<p>Variability in cytokine production after BCG vaccination is associated with the abundance of microbial genomes,
+    which in turn affect or produce metabolites in circulation. <i>Roseburia</i> is found to alter both trained immune
+    responses and phenylalanine metabolism, revealing microbes and microbial products that may alter BCG-induced
+    immunity. Together, our findings contribute to the understanding of specific and trained immune responses after
+    BCG vaccination.</p>
+</div>
+
+
 
 <p>
     <u>Stražar, M</u>., Temba, G. S., Vlamakis, H., Kullaya, V. I., Lyamuya, F., Mmbaga, B. T., ... Xavier, R. J. (2021). Gut
@@ -362,6 +394,7 @@ function toggleAbstract(id) {
 }
 
 function init(){
+    toggleAbstract("abs_bcg");
 	toggleAbstract("abs_tanzania");
 	toggleAbstract("abs_tsne_springer");
 	toggleAbstract("abs_open_tsne");
