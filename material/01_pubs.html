@@ -26,12 +26,13 @@ You can toggle abstracts by clicking the corresponding button and hide all abstr
 
 
 <p>
- 
-
 Vatanen, T., Jabbar, K.S., Ruohtula, T., Honkanen, J., Avila-Pacheco, J.,
-Siljander, H., <u>Stražar, M.</u>, Oikarinen, S., Hyöty, H., Ilonen, J. and Mitchell,
-C.M.  ... & Xavier, R. J. (2022). Mobile genetic elements from the maternal microbiome shape infant
-gut microbial assembly and metabolism. Cell, 185(26), pp.4921-4936.
+Siljander, H., <u>Stražar, M.</u>, Oikarinen, S., Hyöty, H., Ilonen, J., Mitchell,
+C.M.  ... & Xavier, R. J. (2022). 
+
+<b>Mobile genetic elements from the maternal microbiome shape infant
+gut microbial assembly and metabolism.</b>
+Cell, 185(26), pp.4921-4936.
 
     <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01467-2"> Link </a> |
     <a onClick="toggleAbstract('abs_edia'); return false;" href="fallback.html">Toggle abstract</a>
@@ -39,7 +40,7 @@ gut microbial assembly and metabolism. Cell, 185(26), pp.4921-4936.
 
 
 <div id="abs_edia" class="abstract">
-
+<p>
 The perinatal period represents a critical window for cognitive and immune
 system development, promoted by maternal and infant gut microbiomes and their
 metabolites. Here, we tracked the co-development of microbiomes and metabolomes
@@ -55,7 +56,7 @@ Taken together, our integrative analysis expands the concept of vertical
 transmission of the gut microbiome and provides original insights into the
 development of maternal and infant microbiomes and metabolomes during late
 pregnancy and early life.
-
+</p>
 </div>
 
 
@@ -66,7 +67,7 @@ pregnancy and early life.
 
 <p>
 Vatanen, T., Ang, Q.Y., Siegwald, L., Sarker, S.A., Le Roy, C.I., Duboux, S.,
-Delannoy-Bruno, O., Ngom-Bru, C., Boulangé, C.L., <u>Stražar, M.</u> and
+Delannoy-Bruno, O., Ngom-Bru, C., Boulangé, C.L., <u>Stražar, M.</u>,
 Avila-Pacheco, J., ... & Xavier, R. J. (2022). 
 <b>A distinct clade of Bifidobacterium longum in the gut
 of Bangladeshi children thrives during weaning. </b>
@@ -78,7 +79,7 @@ Cell, 185(23), pp.4280-4297.
 
 
 <div id="abs_dhaka" class="abstract">
-
+<p>
 The gut microbiome has an important role in infant health and development. We
 characterized the fecal microbiome and metabolome of 222 young children in
 Dhaka, Bangladesh during the first two years of life. A distinct
@@ -93,11 +94,8 @@ longum subsp. infantis, indolelactate and N-acetylglutamate. Our data
 demonstrate geographic, cultural, seasonal, and ecological heterogeneity that
 should be accounted for when identifying microbiome factors implicated in and
 potentially benefiting infant development.
-
+</p>
 </div>
-
-
-
 
 
 
@@ -483,6 +481,8 @@ function toggleAbstract(id) {
 }
 
 function init(){
+    toggleAbstract("abs_dhaka");
+    toggleAbstract("abs_edia");
     toggleAbstract("abs_bcg");
 	toggleAbstract("abs_tanzania");
 	toggleAbstract("abs_tsne_springer");
