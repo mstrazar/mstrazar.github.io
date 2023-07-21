@@ -19,9 +19,31 @@ permalink: /pubs/
 <body onload="init()">
 <!--- NOTE: when adding new publications, do not forget to add the call to toggleAbstract to the init() function. --->
 
-<p class="intro"> List of peer-reviewed publications and pre-prints in reverse chronological order.
-You can toggle abstracts by clicking the corresponding button and hide all abstracts by reloading the page.
+<p class="intro"> List of peer-reviewed publications and pre-prints in reverse chronological order. </p>
+
+
+
+
+
+<p>
+
+<u>Stražar, M.*</u>, Park, J.*, Abelin, J. G.*, Taylor, H. B., Pedersen, T. K., Plichta,
+D. R., ... & Xavier, R. J., Graham, D. B. (2023). <b>HLA-II immunopeptidome
+profiling and deep learning reveal features of antigenicity to inform antigen
+discovery. </b> Immunity.  Jul 11;56(7):1681-1698.e13. 
+
+<a href="https://doi.org/10.1016/j.immuni.2023.05.009"> Link </a> |
+<a onClick="toggleAbstract('abs_captan'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
+
+<div id="abs_captan" class="abstract">
+<p>
+CD4+ T cell responses are exquisitely antigen specific and directed toward peptide epitopes displayed by human leukocyte antigen class II (HLA-II) on antigen-presenting cells. Underrepresentation of diverse alleles in ligand databases and an incomplete understanding of factors affecting antigen presentation in vivo have limited progress in defining principles of peptide immunogenicity. Here, we employed monoallelic immunopeptidomics to identify 358,024 HLA-II binders, with a particular focus on HLA-DQ and HLA-DP. We uncovered peptide-binding patterns across a spectrum of binding affinities and enrichment of structural antigen features. These aspects underpinned the development of context-aware predictor of T cell antigens (CAPTAn), a deep learning model that predicts peptide antigens based on their affinity to HLA-II and full sequence of their source proteins. CAPTAn was instrumental in discovering prevalent T cell epitopes from bacteria in the human microbiome and a pan-variant epitope from SARS-CoV-2. Together CAPTAn and associated datasets present a resource for antigen discovery and the unraveling genetic associations of HLA alleles with immunopathologies.
+</p>
+</div>
+
+
+
 
 
 
@@ -427,6 +449,8 @@ biological structures are discussed.</p>
 <p class="intro">Presentations at conferences, meetings and workshops.</p>
 
 
+
+
 <p>
 Godec, P., Zupan B., Tanko V., Stražar M. (2022),
 <b>Efficient Matching of Single Cells and Cell Types</b>, 
@@ -482,6 +506,7 @@ function toggleAbstract(id) {
 
 function init(){
     toggleAbstract("abs_dhaka");
+    toggleAbstract("abs_captan");
     toggleAbstract("abs_edia");
     toggleAbstract("abs_bcg");
 	toggleAbstract("abs_tanzania");
