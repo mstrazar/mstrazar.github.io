@@ -26,13 +26,42 @@ permalink: /pubs/
 
 
 <p>
+Goldman, S., Wohlwend, J., <u>Stražar, M.</u>, Haroush, G., Xavier, R. J., & Coley, C. W. (2023). <b>Annotating metabolite mass spectra with domain-inspired chemical formula transformers.</b> Nature Machine Intelligence, 5(9), 965-979.
+
+| <a href="https://www.nature.com/articles/s42256-023-00708-3"> Link </a> |
+<a onClick="toggleAbstract('abs_mist'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_mist" class="abstract">
+<p>
+Metabolomics studies have identified small molecules that mediate cell signaling, competition and disease pathology, in part due to large-scale community efforts to measure tandem mass spectra for thousands of metabolite standards. Nevertheless, the majority of spectra observed in clinical samples cannot be unambiguously matched to known structures. Deep learning approaches to small-molecule structure elucidation have surprisingly failed to rival classical statistical methods, which we hypothesize is due to the lack of in-domain knowledge incorporated into current neural network architectures. Here we introduce a neural network-driven workflow for untargeted metabolomics, Metabolite Inference with Spectrum Transformers (MIST), to annotate tandem mass spectra peaks with chemical structures. Unlike existing approaches, MIST incorporates domain insights into its architecture by encoding peaks with their chemical formula representations, implicitly featurizing pairwise neutral losses and training the network to additionally predict substructure fragments. MIST performs favorably compared with both standard neural architectures and the state-of-the-art kernel method on the task of fingerprint prediction for over 70% of metabolite standards and retrieves 66% of metabolites with equal or improved accuracy, with 29% strictly better. We further demonstrate the utility of MIST by suggesting potential dipeptide and alkaloid structures for differentially abundant spectra found in an inflammatory bowel disease patient cohort.
+</p>
+</div>
+
+Lötstedt, B., <u>Stražar, M.</u>, Xavier, R., Regev, A., & Vickovic, S. (2023). <b>Spatial host–microbiome sequencing reveals niches in the mouse gut</b>. Nature Biotechnology, 1-10.
+
+| <a href="https://www.nature.com/articles/s41587-023-01988-1"> Link </a> |
+<a onClick="toggleAbstract('abs_shm'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+
+<div id="abs_shm" class="abstract">
+<p>
+Mucosal and barrier tissues, such as the gut, lung or skin, are composed of a complex network of cells and microbes forming a tight niche that prevents pathogen colonization and supports host–microbiome symbiosis. Characterizing these networks at high molecular and cellular resolution is crucial for understanding homeostasis and disease. Here we present spatial host–microbiome sequencing (SHM-seq), an all-sequencing-based approach that captures tissue histology, polyadenylated RNAs and bacterial 16S sequences directly from a tissue by modifying spatially barcoded glass surfaces to enable simultaneous capture of host transcripts and hypervariable regions of the 16S bacterial ribosomal RNA. We applied our approach to the mouse gut as a model system, used a deep learning approach for data mapping and detected spatial niches defined by cellular composition and microbial geography. We show that subpopulations of gut cells express specific gene programs in different microenvironments characteristic of regional commensal bacteria and impact host–bacteria interactions. SHM-seq should enhance the study of native host–microbe interactions in health and disease.
+</p>
+</div>
+
+
+
+
+
+
 
 <u>Stražar, M.*</u>, Park, J.*, Abelin, J. G.*, Taylor, H. B., Pedersen, T. K., Plichta,
 D. R., ... & Xavier, R. J., Graham, D. B. (2023). <b>HLA-II immunopeptidome
 profiling and deep learning reveal features of antigenicity to inform antigen
 discovery. </b> Immunity.  Jul 11;56(7):1681-1698.e13. 
 
-<a href="https://doi.org/10.1016/j.immuni.2023.05.009"> Link </a> |
+| <a href="https://doi.org/10.1016/j.immuni.2023.05.009"> Link </a> |
 <a onClick="toggleAbstract('abs_captan'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
@@ -56,7 +85,7 @@ C.M.  ... & Xavier, R. J. (2022).
 gut microbial assembly and metabolism.</b>
 Cell, 185(26), pp.4921-4936.
 
-    <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01467-2"> Link </a> |
+    | <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01467-2"> Link </a> |
     <a onClick="toggleAbstract('abs_edia'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
@@ -94,7 +123,7 @@ Avila-Pacheco, J., ... & Xavier, R. J. (2022).
 <b>A distinct clade of Bifidobacterium longum in the gut
 of Bangladeshi children thrives during weaning. </b>
 Cell, 185(23), pp.4280-4297.
-    <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01326-5"> Link </a> |
+    | <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)01326-5"> Link </a> |
     <a onClick="toggleAbstract('abs_dhaka'); return false;" href="fallback.html">Toggle abstract</a>
 </p>
 
@@ -126,7 +155,7 @@ potentially benefiting infant development.
     <u>Stražar, M.*,</u> Mourits, V. P.*, Koeken, V. A., de Bree, L. C. J., Moorlag, S. J., Joosten, L. A., ... & Xavier, R. J. (2021).
     <b>The influence of the gut microbiome on BCG-induced trained immunity</b>. Genome Biology, 22(1), 1-22.
 
-    <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02482-0"> Link </a> |
+    | <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02482-0"> Link </a> |
     <a onClick="toggleAbstract('abs_bcg'); return false;" href="fallback.html">Toggle abstract</a>
 
 </p>
@@ -505,6 +534,8 @@ function toggleAbstract(id) {
 }
 
 function init(){
+    toggleAbstract("abs_shm");
+    toggleAbstract("abs_mist");
     toggleAbstract("abs_dhaka");
     toggleAbstract("abs_captan");
     toggleAbstract("abs_edia");
