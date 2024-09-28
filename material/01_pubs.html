@@ -22,6 +22,56 @@ permalink: /pubs/
 <p class="intro"> List of peer-reviewed publications and pre-prints in reverse chronological order. </p>
 
 
+Poličar, P. G., <u>Stražar, M.</u>, & Zupan, B. (2024). openTSNE: A Modular Python
+Library for t-SNE Dimensionality Reduction and Embedding. Journal of
+Statistical Software, 109(3), 1–30. | 
+<a href="https://doi.org/10.18637/jss.v109.i03">Link</a> |
+<a onClick="toggleAbstract('abs_jss'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+</p>
+<div id="abs_jss" class="abstract">
+One of the most popular techniques for visualizing large, high-dimensional data
+sets is t-distributed stochastic neighbor embedding (t-SNE). Recently, several
+extensions have been proposed to address scalability issues and the quality of
+the resulting visualizations. We introduce openTSNE, a modular Python library
+that implements the core t-SNE algorithm and its many extensions. The library
+is faster than existing implementations and can compute projections of data
+sets containing millions of data points in minutes.
+<p>
+</p>
+</div>
+
+
+
+Li, C.*, <u>Stražar, M.*</u>, Mohamed, A. M., Pacheco, J. A., Walker, R. L., Lebar, T.,
+... & Xavier, R. J. (2024). <b>Gut microbiome and metabolome profiling in
+Framingham heart study reveals cholesterol-metabolizing bacteria.</b> Cell, 187(8),
+1834-1852 |
+<a href=""> Link </a> |
+<a onClick="toggleAbstract('abs_fhs'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+</p>
+<div id="abs_fhs" class="abstract">
+Accumulating evidence suggests that cardiovascular disease (CVD) is associated
+with an altered gut microbiome. Our understanding of the underlying mechanisms
+has been hindered by lack of matched multi-omic data with diagnostic
+biomarkers. To comprehensively profile gut microbiome contributions to CVD, we
+generated stool metagenomics and metabolomics from 1,429 Framingham Heart Study
+participants. We identified blood lipids and cardiovascular health measurements
+associated with microbiome and metabolome composition. Integrated analysis
+revealed microbial pathways implicated in CVD, including flavonoid,
+γ-butyrobetaine, and cholesterol metabolism. Species from the Oscillibacter
+genus were associated with decreased fecal and plasma cholesterol levels. Using
+functional prediction and in vitro characterization of multiple representative
+human gut <i>Oscillibacter isolates</i>, we uncovered conserved
+cholesterol-metabolizing capabilities, including glycosylation and
+dehydrogenation. These findings suggest that cholesterol metabolism is a broad
+property of phylogenetically diverse Oscillibacter spp., with potential
+benefits for lipid homeostasis and cardiovascular health.
+<p>
+</p>
+</div>
+
 Schirmer, M.*, <u>Stražar, M.*</u>, Avila-Pacheco, J., Rojas-Tapias, D. F.,
 Brown, E. M., Temple, E., ... & Xavier, R. J. (2024). <b>Linking microbial genes
 to plasma and stool metabolites uncovers host-microbial interactions underlying
@@ -52,6 +102,36 @@ and treatment.
 <p>
 </p>
 </div>
+
+Furuichi, M., Kawaguchi, T., Pust, M. M., Yasuma-Mitobe, K., Plichta, D. R.,
+Hasegawa, N., ..., <u>Stražar M</u>,... & Honda, K. (2024). Commensal consortia decolonize
+<b>Enterobacteriaceae via ecological control.</b> Nature, 1-9. |
+<a href="https://www.nature.com/articles/s41586-024-07960-6">Link</a> |
+<a onClick="toggleAbstract('abs_gluconate'); return false;" href="fallback.html">Toggle abstract</a>
+</p>
+</p>
+<div id="abs_gluconate" class="abstract">
+Persistent colonization and outgrowth of potentially pathogenic organisms in
+the intestine can result from long-term antibiotic use or inflammatory
+conditions, and may perpetuate dysregulated immunity and tissue damage.
+Gram-negative Enterobacteriaceae gut pathobionts are particularly recalcitrant
+to conventional antibiotic treatment, although an emerging body of evidence
+suggests that manipulation of the commensal microbiota may be a practical
+alternative therapeutic strategy. Here we isolated and down-selected
+commensal bacterial consortia from stool samples from healthy humans that could
+strongly and specifically suppress intestinal Enterobacteriaceae. One of the
+elaborated consortia, comprising 18 commensal strains, effectively controlled
+ecological niches by regulating gluconate availability, thereby re-establishing
+colonization resistance and alleviating Klebsiella- and Escherichia-driven
+intestinal inflammation in mice. Harnessing these activities in the form of
+live bacterial therapies may represent a promising solution to combat the
+growing threat of proinflammatory, antimicrobial-resistant Enterobacteriaceae
+infection.
+<p>
+</p>
+</div>
+
+
 
 
 Lötstedt, B., <u>Stražar, M.</u>, Xavier, R., Regev, A., & Vickovic, S. (2023). <b>Spatial host–microbiome sequencing reveals niches in the mouse gut</b>. Nature Biotechnology, 1-10.
@@ -567,17 +647,20 @@ function toggleAbstract(id) {
 
 function init(){
     toggleAbstract("abs_protect");
+    toggleAbstract("abs_gluconate");
+    toggleAbstract("abs_fhs");
+    toggleAbstract("abs_jss");
     toggleAbstract("abs_shm");
     toggleAbstract("abs_mist");
     toggleAbstract("abs_dhaka");
     toggleAbstract("abs_captan");
     toggleAbstract("abs_edia");
     toggleAbstract("abs_bcg");
-	toggleAbstract("abs_tanzania");
-	toggleAbstract("abs_tsne_springer");
-	toggleAbstract("abs_open_tsne");
-	toggleAbstract("abs_orange_img");
-	toggleAbstract("abs_scorange");
+    toggleAbstract("abs_tanzania");
+    toggleAbstract("abs_tsne_springer");
+    toggleAbstract("abs_open_tsne");
+    toggleAbstract("abs_orange_img");
+    toggleAbstract("abs_scorange");
     toggleAbstract("abs_mklaren");
     toggleAbstract("abs_ionmf");
     toggleAbstract('abs_yeast');
